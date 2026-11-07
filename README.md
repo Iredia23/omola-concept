@@ -96,7 +96,6 @@ git clone https://github.com/Iredia23/omola-concept.git
 Some content is a starting template and must be checked against how the
 business really works:
 
-- [ ] **Phone number.** `(212) 555-1234` is a placeholder (it was on the original page). Replace it everywhere it appears.
 - [ ] **Products and prices.** The 23 products are examples using stock photos from Unsplash. Replace them with real stock, prices and photos.
 - [ ] **Delivery, returns and payment.** Check the times, 7-day exchange rule, store pick-up and other details on the Shipping & Returns and FAQ pages.
 - [ ] **Privacy Policy and Terms.** These are general templates, not legal advice. Have them reviewed if needed.
