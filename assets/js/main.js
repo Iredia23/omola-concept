@@ -7,7 +7,7 @@
    - sending an order to the boutique by Instagram DM or email
    ========================================================================== */
 
-const INSTAGRAM_HANDLE = 'the_wholesaleplug';
+const INSTAGRAM_HANDLE = '_ire.dia';
 const INSTAGRAM_DM_URL = `https://ig.me/m/${INSTAGRAM_HANDLE}`;
 const SHOP_EMAIL = 'girlthat612@gmail.com';
 
