@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Omola Concept: shared styles for every page.
+   Layout and colours come from Tailwind CSS (loaded in each page's <head>).
+   This file holds the custom styles Tailwind doesn't provide.
+   ========================================================================== */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.heading-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Full-screen banner on the home page */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Smaller banner at the top of every other page (image set per page) */
+.page-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Instagram gradient buttons */
+.instagram-btn {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    transition: all 0.3s ease;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item {
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.instagram-icon {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Size buttons on the product page */
+.size-option {
+    min-width: 3rem;
+    transition: all 0.2s ease;
+}
+
+.size-option[aria-pressed="true"] {
+    background-color: #db2777; /* pink-600 */
+    border-color: #db2777;
+    color: #ffffff;
+}
+
+/* FAQ and product-detail accordions (<details> elements) */
+.accordion summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary .accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion[open] summary .accordion-icon {
+    transform: rotate(45deg);
+}
+
+/* Tables on the size guide and shipping pages */
+.data-table th,
+.data-table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* gray-50 */
+}
+
+/* Long-form text on the policy pages */
+.prose-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+}
+
+.prose-content p,
+.prose-content li {
+    color: #374151; /* gray-700 */
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+.prose-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.prose-content a {
+    color: #db2777;
+    text-decoration: underline;
+}
+
+/* Lookbook lightbox */
+.lightbox {
+    background: rgba(17, 24, 39, 0.92);
+}
+
+/* "Added to bag" pop-up message */
+.toast {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.toast-hidden {
+    opacity: 0;
+    transform: translateY(1rem);
+    pointer-events: none;
+}

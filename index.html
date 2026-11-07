@@ -3,87 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omola Concept | Fashion & Style</title>
+    <title>Omola Concept | Fashion &amp; Style</title>
+    <meta name="description" content="Omola Concept is a Lagos fashion boutique offering curated dresses, tops, sets and accessories. Shop online, by Instagram DM or in store.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omola Concept">
+    <meta property="og:title" content="Omola Concept | Fashion &amp; Style">
+    <meta property="og:description" content="Omola Concept is a Lagos fashion boutique offering curated dresses, tops, sets and accessories. Shop online, by Instagram DM or in store.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#db2777">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .heading-font {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        
-        .instagram-btn {
-            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-            transition: all 0.3s ease;
-        }
-        
-        .instagram-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .gallery-item {
-            transition: all 0.3s ease;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.03);
-        }
-        
-        .instagram-icon {
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-white text-gray-800">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold heading-font text-pink-600">Omola Concept</div>
+                <a href="index.html" class="text-2xl font-bold heading-font text-pink-600">Omola Concept</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="hover:text-pink-600 transition">Home</a>
-                    <a href="#about" class="hover:text-pink-600 transition">About</a>
-                    <a href="#gallery" class="hover:text-pink-600 transition">Gallery</a>
-                    <a href="#contact" class="hover:text-pink-600 transition">Contact</a>
+                    <a href="index.html" class="text-pink-600 font-semibold transition" aria-current="page">Home</a>
+                    <a href="shop.html" class="hover:text-pink-600 transition">Shop</a>
+                    <a href="lookbook.html" class="hover:text-pink-600 transition">Lookbook</a>
+                    <a href="about.html" class="hover:text-pink-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
                 </div>
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative hover:text-pink-600 transition" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span data-bag-count class="hidden absolute -top-2 -right-3 bg-pink-600 text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+                    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <a href="#home" class="block py-2 hover:text-pink-600 transition">Home</a>
-                <a href="#about" class="block py-2 hover:text-pink-600 transition">About</a>
-                <a href="#gallery" class="block py-2 hover:text-pink-600 transition">Gallery</a>
-                <a href="#contact" class="block py-2 hover:text-pink-600 transition">Contact</a>
+                <a href="index.html" class="block py-2 text-pink-600 font-semibold transition" aria-current="page">Home</a>
+                <a href="shop.html" class="block py-2 hover:text-pink-600 transition">Shop</a>
+                <a href="lookbook.html" class="block py-2 hover:text-pink-600 transition">Lookbook</a>
+                <a href="about.html" class="block py-2 hover:text-pink-600 transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-pink-600 transition">Contact</a>
             </div>
         </div>
     </nav>
@@ -91,19 +56,88 @@
     <!-- Hero Section -->
     <section id="home" class="hero-image h-screen flex items-center justify-center text-white pt-16">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6">Elevate your style
+            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-6">Elevate your style</h1>
             <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Curated fashion pieces that tell your unique story. Follow us on Instagram for daily inspiration.</p>
-            <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
-                <i class="fab fa-instagram mr-2 instagram-icon"></i> Follow @the_wholesaleplug
-            </a>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="shop.html" class="inline-block bg-white text-pink-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition">
+                    <i class="fas fa-shopping-bag mr-2"></i> Shop the Collection
+                </a>
+                <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
+                    <i class="fab fa-instagram mr-2 instagram-icon"></i> Follow @the_wholesaleplug
+                </a>
+            </div>
             <div class="mt-16 animate-bounce">
-                <a href="#about" class="text-white text-2xl"><i class="fas fa-chevron-down"></i></a>
+                <a href="#categories" class="text-white text-2xl" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section id="categories" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Shop by Category</h2>
+                <p class="text-gray-600 mb-4">Find your next favourite piece</p>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="shop.html?category=dresses" class="gallery-item group relative block overflow-hidden rounded-lg shadow-md h-96">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Dresses" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="heading-font text-2xl font-bold mb-1">Dresses</h3>
+                        <span class="text-sm uppercase tracking-widest group-hover:text-pink-300 transition">Shop now <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+                <a href="shop.html?category=tops" class="gallery-item group relative block overflow-hidden rounded-lg shadow-md h-96">
+                    <img src="https://images.unsplash.com/photo-1564257631407-4deb1f99d992?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Tops &amp; Outerwear" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="heading-font text-2xl font-bold mb-1">Tops &amp; Outerwear</h3>
+                        <span class="text-sm uppercase tracking-widest group-hover:text-pink-300 transition">Shop now <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+                <a href="shop.html?category=sets" class="gallery-item group relative block overflow-hidden rounded-lg shadow-md h-96">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Sets &amp; Playsuits" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="heading-font text-2xl font-bold mb-1">Sets &amp; Playsuits</h3>
+                        <span class="text-sm uppercase tracking-widest group-hover:text-pink-300 transition">Shop now <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+                <a href="shop.html?category=accessories" class="gallery-item group relative block overflow-hidden rounded-lg shadow-md h-96">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Accessories" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="heading-font text-2xl font-bold mb-1">Accessories</h3>
+                        <span class="text-sm uppercase tracking-widest group-hover:text-pink-300 transition">Shop now <i class="fas fa-arrow-right ml-1"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section id="new-arrivals" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">New Arrivals</h2>
+                <p class="text-gray-600 mb-4">Fresh pieces, just landed in the boutique</p>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div id="new-arrivals-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <noscript><p class="col-span-full text-center text-gray-600">Turn on JavaScript to see our latest pieces, or <a href="https://instagram.com/the_wholesaleplug" class="text-pink-600 underline">view them on Instagram</a>.</p></noscript>
+            </div>
+            <div class="text-center mt-12">
+                <a href="shop.html" class="inline-block bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-bold transition">
+                    View All Products
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
+    <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Our Story</h2>
@@ -111,16 +145,61 @@
             </div>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Boutique Interior" class="rounded-lg shadow-xl w-full">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Inside the Omola Concept boutique" class="rounded-lg shadow-xl w-full" loading="lazy">
                 </div>
                 <div class="md:w-1/2">
                     <h3 class="heading-font text-2xl md:text-3xl font-bold mb-6">Omola Concept - Where Fashion Meets Passion</h3>
                     <p class="mb-6 text-gray-700">Founded in 2023, Omola Concepts has been at the forefront of contemporary fashion, offering carefully selected pieces that blend quality, comfort, and style.</p>
                     <p class="mb-6 text-gray-700">Our mission is to empower individuals to express their unique personalities through fashion. We believe clothing should make you feel confident and beautiful.</p>
                     <p class="mb-8 text-gray-700">Follow our Instagram to see our latest collections, styling tips, and behind-the-scenes content from our boutique.</p>
-                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full transition">
-                        <i class="fab fa-instagram mr-2"></i> Visit Our Instagram
-                    </a>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="about.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full transition">
+                            Read Our Story
+                        </a>
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="inline-block border border-pink-600 text-pink-600 hover:bg-pink-50 px-6 py-3 rounded-full transition">
+                            <i class="fab fa-instagram mr-2"></i> Visit Our Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Shop With Us -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">Why Shop With Us</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold mb-2">Curated Pieces</h3>
+                    <p class="text-gray-600">Every item is hand-picked for quality, comfort and style.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold mb-2">Nationwide Delivery</h3>
+                    <p class="text-gray-600">Fast delivery within Lagos and to every state in Nigeria.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold mb-2">Easy Exchanges</h3>
+                    <p class="text-gray-600">Not quite right? Exchange unworn items within 7 days.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="heading-font text-xl font-bold mb-2">Order by DM</h3>
+                    <p class="text-gray-600">Shop the way you like: online, by Instagram DM or in store.</p>
                 </div>
             </div>
         </div>
@@ -135,46 +214,49 @@
                 <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- These would be replaced with actual Instagram feed via API in production -->
+                <!-- These could be replaced with a live Instagram feed in future -->
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fashion Item" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Summer Collection" class="w-full h-64 object-cover" loading="lazy">
                     <div class="p-4 bg-white">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600">Summer Collection</span>
-                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800" aria-label="See Summer Collection on Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fashion Item" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="New Arrivals" class="w-full h-64 object-cover" loading="lazy">
                     <div class="p-4 bg-white">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600">New Arrivals</span>
-                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800" aria-label="See New Arrivals on Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Fashion Item" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Accessories" class="w-full h-64 object-cover" loading="lazy">
                     <div class="p-4 bg-white">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600">Accessories</span>
-                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800" aria-label="See Accessories on Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Fashion Item" class="w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Styling Tips" class="w-full h-64 object-cover" loading="lazy">
                     <div class="p-4 bg-white">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600">Styling Tips</span>
-                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-pink-600 hover:text-pink-800" aria-label="See Styling Tips on Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-12">
-                <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="inline-block bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-bold transition">
+            <div class="text-center mt-12 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="lookbook.html" class="inline-block border-2 border-black hover:bg-black hover:text-white px-8 py-4 rounded-full text-lg font-bold transition">
+                    View the Lookbook
+                </a>
+                <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="inline-block bg-black hover:bg-gray-800 text-white px-8 py-4 rounded-full text-lg font-bold transition">
                     <i class="fab fa-instagram mr-2"></i> See More on Instagram
                 </a>
             </div>
@@ -188,10 +270,10 @@
                 <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Join Our Instagram Community</h2>
                 <p class="text-xl mb-10">Follow us for daily fashion inspiration, exclusive previews, styling tips, and special Instagram-only promotions.</p>
                 <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
                         <i class="fab fa-instagram mr-2"></i> Follow @the_wholesaleplug
                     </a>
-                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="bg-white hover:bg-gray-100 text-pink-600 px-8 py-4 rounded-full font-bold text-lg transition">
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="bg-white hover:bg-gray-100 text-pink-600 px-8 py-4 rounded-full font-bold text-lg transition">
                         <i class="fas fa-hashtag mr-2"></i> #OmolaConcepts
                     </a>
                 </div>
@@ -212,11 +294,14 @@
                     <h3 class="heading-font text-2xl font-bold mb-6">Visit Us</h3>
                     <p class="mb-6 text-gray-700"><i class="fas fa-map-marker-alt mr-3 text-pink-600"></i> No 27 First Capital Plaza Opebi Ikeja Lagos, Lagos, Nigeria 100001</p>
                     <p class="mb-6 text-gray-700"><i class="fas fa-phone mr-3 text-pink-600"></i> (212) 555-1234</p>
-                    <p class="mb-6 text-gray-700"><i class="fas fa-envelope mr-3 text-pink-600"></i> girlthat612@gmail.com</p>
+                    <p class="mb-6 text-gray-700"><i class="fas fa-envelope mr-3 text-pink-600"></i> <a href="mailto:girlthat612@gmail.com" class="hover:text-pink-600 transition">girlthat612@gmail.com</a></p>
                     <h3 class="heading-font text-2xl font-bold mb-6 mt-10">Store Hours</h3>
                     <p class="mb-2 text-gray-700">Monday - Friday: 10AM - 8PM</p>
                     <p class="mb-2 text-gray-700">Saturday: 10AM - 9PM</p>
-                    <p class="text-gray-700">Sunday: 11AM - 6PM</p>
+                    <p class="mb-8 text-gray-700">Sunday: 11AM - 6PM</p>
+                    <a href="contact.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full transition">
+                        Send Us a Message
+                    </a>
                 </div>
                 <div class="md:w-1/2">
                     <h3 class="heading-font text-2xl font-bold mb-6">Connect on Instagram</h3>
@@ -224,15 +309,15 @@
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <div class="flex items-center mb-6">
                             <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-pink-600">
-                                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="the_wholesaleplug Instagram" class="w-full h-full object-cover">
+                                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="@the_wholesaleplug on Instagram" class="w-full h-full object-cover" loading="lazy">
                             </div>
                             <div class="ml-4">
                                 <h4 class="font-bold">@the_wholesaleplug</h4>
-                                <p class="text-gray-600 text-sm">5 followers</p>
+                                <p class="text-gray-600 text-sm">Fashion boutique · Lagos</p>
                             </div>
                         </div>
                         <p class="mb-6 text-gray-700">Follow us for styling tips, new arrivals, and exclusive Instagram stories.</p>
-                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" class="block text-center instagram-btn px-6 py-3 rounded-full text-white font-bold">
+                        <a href="https://ig.me/m/the_wholesaleplug" target="_blank" rel="noopener" class="block text-center instagram-btn px-6 py-3 rounded-full text-white font-bold">
                             <i class="fab fa-instagram mr-2"></i> Message Us
                         </a>
                     </div>
@@ -242,101 +327,66 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
                     <div class="text-2xl font-bold heading-font text-pink-400 mb-2">Omola Concept</div>
-                    <p class="text-gray-400">Curated fashion for the modern individual</p>
+                    <p class="text-gray-400 mb-6">Curated fashion for the modern individual</p>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-2xl text-pink-400 hover:text-pink-300 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:girlthat612@gmail.com" class="text-2xl text-gray-400 hover:text-white transition" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="flex space-x-6 mb-6 md:mb-0">
-                    <a href="https://instagram.com/belleboutique" target="_blank" class="text-2xl text-pink-400 hover:text-pink-300 transition">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-2xl text-gray-400 hover:text-white transition">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="text-2xl text-gray-400 hover:text-white transition">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-2xl text-gray-400 hover:text-white transition">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="shop.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="shop.html?category=dresses" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="shop.html?category=tops" class="hover:text-white transition">Tops &amp; Outerwear</a></li>
+                        <li><a href="shop.html?category=bottoms" class="hover:text-white transition">Bottoms</a></li>
+                        <li><a href="shop.html?category=sets" class="hover:text-white transition">Sets &amp; Playsuits</a></li>
+                        <li><a href="shop.html?category=accessories" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
                 </div>
-                <div class="text-center md:text-right">
-                    <p class="text-gray-400 mb-2">© 2023 Omola Concept. All rights reserved.</p>
-                    <p class="text-gray-400 text-sm">Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="shipping-returns.html" class="hover:text-white transition">Shipping &amp; Returns</a></li>
+                        <li><a href="size-guide.html" class="hover:text-white transition">Size Guide</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Your Bag</a></li>
+                    </ul>
                 </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="lookbook.html" class="hover:text-white transition">Lookbook</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
+                <p>© <span data-year>2026</span> Omola Concept. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden">
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script>
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Back to Top Button
-        const backToTopBtn = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.remove('hidden');
-            } else {
-                backToTopBtn.classList.add('hidden');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-        
-        // Instagram button animation on hover
-        const instagramBtns = document.querySelectorAll('.instagram-btn');
-        
-        instagramBtns.forEach(btn => {
-            btn.addEventListener('mouseenter', () => {
-                btn.querySelector('i').classList.add('animate-pulse');
-            });
-            
-            btn.addEventListener('mouseleave', () => {
-                btn.querySelector('i').classList.remove('animate-pulse');
-            });
-        });
-    </script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 </html>

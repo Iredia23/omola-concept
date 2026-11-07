@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Omola Concept</title>
+    <meta name="description" content="The story of Omola Concept, a Lagos fashion boutique founded in 2023 to help you express your unique style.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omola Concept">
+    <meta property="og:title" content="About Us | Omola Concept">
+    <meta property="og:description" content="The story of Omola Concept, a Lagos fashion boutique founded in 2023 to help you express your unique style.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#db2777">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold heading-font text-pink-600">Omola Concept</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+                    <a href="shop.html" class="hover:text-pink-600 transition">Shop</a>
+                    <a href="lookbook.html" class="hover:text-pink-600 transition">Lookbook</a>
+                    <a href="about.html" class="text-pink-600 font-semibold transition" aria-current="page">About</a>
+                    <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative hover:text-pink-600 transition" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span data-bag-count class="hidden absolute -top-2 -right-3 bg-pink-600 text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+                    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 hover:text-pink-600 transition">Home</a>
+                <a href="shop.html" class="block py-2 hover:text-pink-600 transition">Shop</a>
+                <a href="lookbook.html" class="block py-2 hover:text-pink-600 transition">Lookbook</a>
+                <a href="about.html" class="block py-2 text-pink-600 font-semibold transition" aria-current="page">About</a>
+                <a href="contact.html" class="block py-2 hover:text-pink-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-hero h-72 md:h-96 flex items-center justify-center text-white pt-16"
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm uppercase tracking-widest mb-4"><a href="index.html" class="hover:text-pink-300 transition">Home</a> <span class="mx-2">/</span> About</p>
+            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-4">Our Story</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">Where fashion meets passion.</p>
+        </div>
+    </section>
+
+    <!-- Story -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Clothing rail in the Omola Concept boutique" class="rounded-lg shadow-xl w-full" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-sm uppercase tracking-widest text-pink-600 font-semibold mb-4">Founded in 2023</p>
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Omola Concept - Where Fashion Meets Passion</h2>
+                    <p class="mb-6 text-gray-700">Founded in 2023, Omola Concepts has been at the forefront of contemporary fashion, offering carefully selected pieces that blend quality, comfort, and style.</p>
+                    <p class="mb-6 text-gray-700">What started as a passion for great clothes has grown into a boutique in the heart of Opebi, Ikeja, and a growing community of style lovers on Instagram.</p>
+                    <p class="text-gray-700">Every collection is chosen with one question in mind: will this make you feel confident and beautiful? If the answer is yes, it earns a place on our rails.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <i class="fas fa-quote-left text-4xl text-pink-200 mb-6"></i>
+            <p class="heading-font text-2xl md:text-3xl font-bold leading-relaxed mb-6">Our mission is to empower individuals to express their unique personalities through fashion.</p>
+            <p class="text-lg">We believe clothing should make you feel confident and beautiful.</p>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">What We Stand For</h2>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl"><i class="fas fa-gem"></i></div>
+                    <h3 class="heading-font text-xl font-bold mb-3">Curated with Care</h3>
+                    <p class="text-gray-600">We hand-pick every piece, so you only see clothes we would proudly wear ourselves.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl"><i class="fas fa-award"></i></div>
+                    <h3 class="heading-font text-xl font-bold mb-3">Quality First</h3>
+                    <p class="text-gray-600">Good fabric, careful stitching and a great fit, made to be worn again and again.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl"><i class="fas fa-star"></i></div>
+                    <h3 class="heading-font text-xl font-bold mb-3">Your Unique Story</h3>
+                    <p class="text-gray-600">Fashion is self-expression. We help you find pieces that feel like you.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl"><i class="fas fa-heart"></i></div>
+                    <h3 class="heading-font text-xl font-bold mb-3">Community</h3>
+                    <p class="text-gray-600">Our Instagram family inspires everything we do. We love seeing how you style our pieces.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What we offer -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">What You'll Find</h2>
+                <p class="text-gray-600 mb-4">Something for every occasion in your calendar</p>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <a href="shop.html?category=dresses" class="group block">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-6">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Occasion Wear" class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-2 group-hover:text-pink-600 transition">Occasion Wear</h3>
+                    <p class="text-gray-600">Gowns and statement dresses for weddings, parties and celebrations.</p>
+                </a>
+                <a href="shop.html?category=sets" class="group block">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-6">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Everyday Style" class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-2 group-hover:text-pink-600 transition">Everyday Style</h3>
+                    <p class="text-gray-600">Tops, jeans, sets and playsuits for work, weekends and everything in between.</p>
+                </a>
+                <a href="shop.html?category=accessories" class="group block">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-6">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Finishing Touches" class="w-full h-72 object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+                    </div>
+                    <h3 class="heading-font text-2xl font-bold mb-2 group-hover:text-pink-600 transition">Finishing Touches</h3>
+                    <p class="text-gray-600">Bags, shoes and jewellery that complete the look.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 order-2 md:order-1">
+                    <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Visit the Boutique</h2>
+                    <p class="mb-6 text-gray-700">Come and try on your favourites, get styling advice, and see new arrivals before they hit Instagram.</p>
+                    <p class="mb-2 text-gray-700"><i class="fas fa-map-marker-alt mr-3 text-pink-600"></i> No 27 First Capital Plaza Opebi Ikeja Lagos, Lagos, Nigeria 100001</p>
+                    <p class="mb-8 text-gray-700"><i class="fas fa-clock mr-3 text-pink-600"></i> Mon–Fri 10AM–8PM · Sat 10AM–9PM · Sun 11AM–6PM</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full transition">Get Directions</a>
+                        <a href="shop.html" class="inline-block border border-pink-600 text-pink-600 hover:bg-pink-50 px-6 py-3 rounded-full transition">Shop Online</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Boutique shelves and clothing displays" class="rounded-lg shadow-xl w-full" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Join Our Instagram Community</h2>
+                <p class="text-xl mb-10">Follow us for daily fashion inspiration, exclusive previews, styling tips, and special Instagram-only promotions.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
+                        <i class="fab fa-instagram mr-2"></i> Follow @the_wholesaleplug
+                    </a>
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="bg-white hover:bg-gray-100 text-pink-600 px-8 py-4 rounded-full font-bold text-lg transition">
+                        <i class="fas fa-hashtag mr-2"></i> #OmolaConcepts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="text-2xl font-bold heading-font text-pink-400 mb-2">Omola Concept</div>
+                    <p class="text-gray-400 mb-6">Curated fashion for the modern individual</p>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-2xl text-pink-400 hover:text-pink-300 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:girlthat612@gmail.com" class="text-2xl text-gray-400 hover:text-white transition" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="shop.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="shop.html?category=dresses" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="shop.html?category=tops" class="hover:text-white transition">Tops &amp; Outerwear</a></li>
+                        <li><a href="shop.html?category=bottoms" class="hover:text-white transition">Bottoms</a></li>
+                        <li><a href="shop.html?category=sets" class="hover:text-white transition">Sets &amp; Playsuits</a></li>
+                        <li><a href="shop.html?category=accessories" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="shipping-returns.html" class="hover:text-white transition">Shipping &amp; Returns</a></li>
+                        <li><a href="size-guide.html" class="hover:text-white transition">Size Guide</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Your Bag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="lookbook.html" class="hover:text-white transition">Lookbook</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
+                <p>© <span data-year>2026</span> Omola Concept. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

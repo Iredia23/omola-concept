@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Omola Concept</title>
+    <meta name="description" content="Contact Omola Concept: visit our boutique in Opebi, Ikeja, send us a message, or DM us on Instagram.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omola Concept">
+    <meta property="og:title" content="Contact Us | Omola Concept">
+    <meta property="og:description" content="Contact Omola Concept: visit our boutique in Opebi, Ikeja, send us a message, or DM us on Instagram.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#db2777">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold heading-font text-pink-600">Omola Concept</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+                    <a href="shop.html" class="hover:text-pink-600 transition">Shop</a>
+                    <a href="lookbook.html" class="hover:text-pink-600 transition">Lookbook</a>
+                    <a href="about.html" class="hover:text-pink-600 transition">About</a>
+                    <a href="contact.html" class="text-pink-600 font-semibold transition" aria-current="page">Contact</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative hover:text-pink-600 transition" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span data-bag-count class="hidden absolute -top-2 -right-3 bg-pink-600 text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+                    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 hover:text-pink-600 transition">Home</a>
+                <a href="shop.html" class="block py-2 hover:text-pink-600 transition">Shop</a>
+                <a href="lookbook.html" class="block py-2 hover:text-pink-600 transition">Lookbook</a>
+                <a href="about.html" class="block py-2 hover:text-pink-600 transition">About</a>
+                <a href="contact.html" class="block py-2 text-pink-600 font-semibold transition" aria-current="page">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-hero h-72 md:h-96 flex items-center justify-center text-white pt-16"
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm uppercase tracking-widest mb-4"><a href="index.html" class="hover:text-pink-300 transition">Home</a> <span class="mx-2">/</span> Contact</p>
+            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-4">Get In Touch</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">Questions, orders or styling advice: we'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact form and details -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-8">
+                        <h2 class="heading-font text-2xl font-bold mb-2">Send Us a Message</h2>
+                        <p class="text-gray-600 mb-6 text-sm">This opens your email app with your message ready to send. Prefer Instagram? <a href="https://ig.me/m/the_wholesaleplug" target="_blank" rel="noopener" class="text-pink-600 underline">DM us instead</a>.</p>
+                        <form id="contact-form" novalidate class="space-y-5">
+                            <div>
+                                <label for="name" class="block font-semibold mb-2">Name</label>
+                                <input id="name" name="name" type="text" required autocomplete="name" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-pink-600">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block font-semibold mb-2">Email</label>
+                                    <input id="email" name="email" type="email" required autocomplete="email" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-pink-600">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block font-semibold mb-2">Phone <span class="text-gray-400 font-normal">(optional)</span></label>
+                                    <input id="phone" name="phone" type="tel" autocomplete="tel" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-pink-600">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block font-semibold mb-2">What is it about?</label>
+                                <select id="subject" name="subject" class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-pink-600">
+                                    <option>Order enquiry</option>
+                                    <option>Product availability</option>
+                                    <option>Sizing and styling advice</option>
+                                    <option>Returns and exchanges</option>
+                                    <option>Something else</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block font-semibold mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-pink-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white px-6 py-4 rounded-full font-bold text-lg transition">
+                                <i class="fas fa-paper-plane mr-2"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h3 class="heading-font text-2xl font-bold mb-6">Visit Us</h3>
+                    <p class="mb-6 text-gray-700"><i class="fas fa-map-marker-alt mr-3 text-pink-600"></i> No 27 First Capital Plaza Opebi Ikeja Lagos, Lagos, Nigeria 100001</p>
+                    <p class="mb-6 text-gray-700"><i class="fas fa-phone mr-3 text-pink-600"></i> (212) 555-1234</p>
+                    <p class="mb-6 text-gray-700"><i class="fas fa-envelope mr-3 text-pink-600"></i> <a href="mailto:girlthat612@gmail.com" class="hover:text-pink-600 transition">girlthat612@gmail.com</a></p>
+                    <h3 class="heading-font text-2xl font-bold mb-6 mt-10">Store Hours</h3>
+                    <p class="mb-2 text-gray-700">Monday - Friday: 10AM - 8PM</p>
+                    <p class="mb-2 text-gray-700">Saturday: 10AM - 9PM</p>
+                    <p class="mb-10 text-gray-700">Sunday: 11AM - 6PM</p>
+                    <h3 class="heading-font text-2xl font-bold mb-6">Connect on Instagram</h3>
+                    <p class="mb-6 text-gray-700">For the fastest response, DM us on Instagram. We love seeing how you style our pieces!</p>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-pink-600">
+                                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="@the_wholesaleplug on Instagram" class="w-full h-full object-cover" loading="lazy">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold">@the_wholesaleplug</h4>
+                                <p class="text-gray-600 text-sm">Fashion boutique · Lagos</p>
+                            </div>
+                        </div>
+                        <p class="mb-6 text-gray-700">Follow us for styling tips, new arrivals, and exclusive Instagram stories.</p>
+                        <a href="https://ig.me/m/the_wholesaleplug" target="_blank" rel="noopener" class="block text-center instagram-btn px-6 py-3 rounded-full text-white font-bold">
+                            <i class="fab fa-instagram mr-2"></i> Message Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="bg-white">
+        <iframe title="Map showing Omola Concept at First Capital Plaza, Opebi, Ikeja" src="https://maps.google.com/maps?q=First+Capital+Plaza,+Opebi,+Ikeja,+Lagos&amp;z=16&amp;output=embed"
+                class="w-full h-96 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </section>
+
+    <!-- FAQ teaser -->
+    <section class="py-16 bg-gray-50 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="heading-font text-2xl md:text-3xl font-bold mb-4">Looking for a quick answer?</h2>
+            <p class="text-gray-600 mb-8">Delivery times, sizing, exchanges and more are covered in our FAQs.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="faq.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-bold transition">Read the FAQs</a>
+                <a href="shipping-returns.html" class="inline-block border border-pink-600 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full font-bold transition">Shipping &amp; Returns</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="text-2xl font-bold heading-font text-pink-400 mb-2">Omola Concept</div>
+                    <p class="text-gray-400 mb-6">Curated fashion for the modern individual</p>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-2xl text-pink-400 hover:text-pink-300 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:girlthat612@gmail.com" class="text-2xl text-gray-400 hover:text-white transition" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="shop.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="shop.html?category=dresses" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="shop.html?category=tops" class="hover:text-white transition">Tops &amp; Outerwear</a></li>
+                        <li><a href="shop.html?category=bottoms" class="hover:text-white transition">Bottoms</a></li>
+                        <li><a href="shop.html?category=sets" class="hover:text-white transition">Sets &amp; Playsuits</a></li>
+                        <li><a href="shop.html?category=accessories" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="shipping-returns.html" class="hover:text-white transition">Shipping &amp; Returns</a></li>
+                        <li><a href="size-guide.html" class="hover:text-white transition">Size Guide</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Your Bag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="lookbook.html" class="hover:text-white transition">Lookbook</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
+                <p>© <span data-year>2026</span> Omola Concept. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>

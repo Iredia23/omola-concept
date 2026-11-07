@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Omola Concept</title>
+    <meta name="description" content="Shop dresses, tops, bottoms, sets and accessories from Omola Concept, a fashion boutique in Lagos.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omola Concept">
+    <meta property="og:title" content="Shop | Omola Concept">
+    <meta property="og:description" content="Shop dresses, tops, bottoms, sets and accessories from Omola Concept, a fashion boutique in Lagos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#db2777">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold heading-font text-pink-600">Omola Concept</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+                    <a href="shop.html" class="text-pink-600 font-semibold transition" aria-current="page">Shop</a>
+                    <a href="lookbook.html" class="hover:text-pink-600 transition">Lookbook</a>
+                    <a href="about.html" class="hover:text-pink-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative hover:text-pink-600 transition" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span data-bag-count class="hidden absolute -top-2 -right-3 bg-pink-600 text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+                    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 hover:text-pink-600 transition">Home</a>
+                <a href="shop.html" class="block py-2 text-pink-600 font-semibold transition" aria-current="page">Shop</a>
+                <a href="lookbook.html" class="block py-2 hover:text-pink-600 transition">Lookbook</a>
+                <a href="about.html" class="block py-2 hover:text-pink-600 transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-pink-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-hero h-72 md:h-96 flex items-center justify-center text-white pt-16"
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm uppercase tracking-widest mb-4"><a href="index.html" class="hover:text-pink-300 transition">Home</a> <span class="mx-2">/</span> Shop</p>
+            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-4">Shop the Collection</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">Curated pieces that blend quality, comfort and style.</p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-12">
+                <div id="category-filters" class="flex flex-wrap gap-3" aria-label="Filter by category"></div>
+                <div class="flex items-center gap-4">
+                    <span id="result-count" class="text-gray-600 text-sm whitespace-nowrap"></span>
+                    <label for="sort-select" class="sr-only">Sort products</label>
+                    <select id="sort-select" class="border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-pink-600">
+                        <option value="featured">Featured</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-asc">Price: low to high</option>
+                        <option value="price-desc">Price: high to low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <noscript><p class="col-span-full text-center text-gray-600">Please turn on JavaScript to browse the shop, or <a href="https://instagram.com/the_wholesaleplug" class="text-pink-600 underline">shop on Instagram</a>.</p></noscript>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help strip -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <a href="size-guide.html" class="group">
+                <i class="fas fa-ruler text-3xl text-pink-600 mb-4"></i>
+                <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-pink-600 transition">Find Your Size</h3>
+                <p class="text-gray-600">Measurements for every piece in our size guide.</p>
+            </a>
+            <a href="shipping-returns.html" class="group">
+                <i class="fas fa-truck text-3xl text-pink-600 mb-4"></i>
+                <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-pink-600 transition">Delivery Nationwide</h3>
+                <p class="text-gray-600">Lagos, every state in Nigeria, and international on request.</p>
+            </a>
+            <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="group">
+                <i class="fab fa-instagram text-3xl text-pink-600 mb-4"></i>
+                <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-pink-600 transition">Need Styling Help?</h3>
+                <p class="text-gray-600">DM us on Instagram and we'll help you choose.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="text-2xl font-bold heading-font text-pink-400 mb-2">Omola Concept</div>
+                    <p class="text-gray-400 mb-6">Curated fashion for the modern individual</p>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-2xl text-pink-400 hover:text-pink-300 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:girlthat612@gmail.com" class="text-2xl text-gray-400 hover:text-white transition" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="shop.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="shop.html?category=dresses" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="shop.html?category=tops" class="hover:text-white transition">Tops &amp; Outerwear</a></li>
+                        <li><a href="shop.html?category=bottoms" class="hover:text-white transition">Bottoms</a></li>
+                        <li><a href="shop.html?category=sets" class="hover:text-white transition">Sets &amp; Playsuits</a></li>
+                        <li><a href="shop.html?category=accessories" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="shipping-returns.html" class="hover:text-white transition">Shipping &amp; Returns</a></li>
+                        <li><a href="size-guide.html" class="hover:text-white transition">Size Guide</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Your Bag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="lookbook.html" class="hover:text-white transition">Lookbook</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
+                <p>© <span data-year>2026</span> Omola Concept. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/shop.js"></script>
+</body>
+</html>

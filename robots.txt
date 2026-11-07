@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iredia23.github.io/omola-concept/sitemap.xml

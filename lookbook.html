@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook | Omola Concept</title>
+    <meta name="description" content="Style inspiration from Omola Concept: outfits, new arrivals and looks from our Instagram community.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Omola Concept">
+    <meta property="og:title" content="Lookbook | Omola Concept">
+    <meta property="og:description" content="Style inspiration from Omola Concept: outfits, new arrivals and looks from our Instagram community.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta name="theme-color" content="#db2777">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold heading-font text-pink-600">Omola Concept</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-pink-600 transition">Home</a>
+                    <a href="shop.html" class="hover:text-pink-600 transition">Shop</a>
+                    <a href="lookbook.html" class="text-pink-600 font-semibold transition" aria-current="page">Lookbook</a>
+                    <a href="about.html" class="hover:text-pink-600 transition">About</a>
+                    <a href="contact.html" class="hover:text-pink-600 transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="cart.html" class="relative hover:text-pink-600 transition" aria-label="Shopping bag">
+                        <i class="fas fa-shopping-bag text-xl"></i>
+                        <span data-bag-count class="hidden absolute -top-2 -right-3 bg-pink-600 text-white text-xs font-semibold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+                    <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block py-2 hover:text-pink-600 transition">Home</a>
+                <a href="shop.html" class="block py-2 hover:text-pink-600 transition">Shop</a>
+                <a href="lookbook.html" class="block py-2 text-pink-600 font-semibold transition" aria-current="page">Lookbook</a>
+                <a href="about.html" class="block py-2 hover:text-pink-600 transition">About</a>
+                <a href="contact.html" class="block py-2 hover:text-pink-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-hero h-72 md:h-96 flex items-center justify-center text-white pt-16"
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm uppercase tracking-widest mb-4"><a href="index.html" class="hover:text-pink-300 transition">Home</a> <span class="mx-2">/</span> Lookbook</p>
+            <h1 class="heading-font text-4xl md:text-6xl font-bold mb-4">The Lookbook</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto">Style inspiration, outfit ideas and our favourite looks.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-4">This Season's Looks</h2>
+                <p class="text-gray-600 mb-4">Tap any photo to see it up close</p>
+                <div class="w-20 h-1 bg-pink-600 mx-auto"></div>
+            </div>
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-6">
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="City shopping day" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: City shopping day">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="City shopping day" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">City shopping day</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Scarlet Swing Gown" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Scarlet Swing Gown">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Scarlet Swing Gown" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Scarlet Swing Gown</figcaption>
+                    <a href="product.html?id=scarlet-swing-gown" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Summer brights" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Summer brights">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Summer brights" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Summer brights</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Weekend essentials" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Weekend essentials">
+                        <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Weekend essentials" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Weekend essentials</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Blush Puff-Sleeve Dress" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Blush Puff-Sleeve Dress">
+                        <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Blush Puff-Sleeve Dress" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Blush Puff-Sleeve Dress</figcaption>
+                    <a href="product.html?id=blush-puff-sleeve-dress" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Monochrome elegance" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Monochrome elegance">
+                        <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Monochrome elegance" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Monochrome elegance</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Sunshine Lounge Set" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Sunshine Lounge Set">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Sunshine Lounge Set" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Sunshine Lounge Set</figcaption>
+                    <a href="product.html?id=sunshine-lounge-set" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="What's in her bag" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: What's in her bag">
+                        <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="What's in her bag" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">What's in her bag</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Layered for travel" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Layered for travel">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Layered for travel" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Layered for travel</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Poppy Belted Midi Dress" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Poppy Belted Midi Dress">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Poppy Belted Midi Dress" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Poppy Belted Midi Dress</figcaption>
+                    <a href="product.html?id=poppy-belted-midi-dress" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Tailored street style" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Tailored street style">
+                        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Tailored street style" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Tailored street style</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Bold stripes" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Bold stripes">
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Bold stripes" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Bold stripes</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Plum Off-Shoulder Dress" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Plum Off-Shoulder Dress">
+                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Plum Off-Shoulder Dress" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Plum Off-Shoulder Dress</figcaption>
+                    <a href="product.html?id=plum-off-shoulder-dress" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Neutral knits" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Neutral knits">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Neutral knits" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Neutral knits</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Evening sheer" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Evening sheer">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Evening sheer" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Evening sheer</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Sky Wrap Maxi Dress" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Sky Wrap Maxi Dress">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Sky Wrap Maxi Dress" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Sky Wrap Maxi Dress</figcaption>
+                    <a href="product.html?id=sky-wrap-maxi-dress" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Print stories" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Print stories">
+                        <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Print stories" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Print stories</figcaption>
+                </figure>
+                <figure class="relative mb-6 break-inside-avoid gallery-item">
+                    <button type="button" data-lightbox data-full="https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" data-caption="Midnight Turtleneck Knit" class="block w-full overflow-hidden rounded-lg shadow-md focus:outline-none focus:ring-4 focus:ring-pink-300" aria-label="Enlarge: Midnight Turtleneck Knit">
+                        <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Midnight Turtleneck Knit" class="w-full" loading="lazy">
+                    </button>
+                    <figcaption class="mt-2 text-gray-600 text-sm">Midnight Turtleneck Knit</figcaption>
+                    <a href="product.html?id=midnight-turtleneck-knit" class="absolute bottom-4 right-4 bg-white text-gray-800 text-sm font-semibold px-4 py-2 rounded-full shadow hover:bg-pink-600 hover:text-white transition">Shop the look</a>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox (hidden until a photo is clicked) -->
+    <div id="lightbox" class="lightbox hidden fixed inset-0 z-[60] items-center justify-center p-4" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button id="lightbox-close" type="button" class="absolute top-6 right-6 text-white text-3xl hover:text-pink-400" aria-label="Close"><i class="fas fa-times"></i></button>
+        <button id="lightbox-prev" type="button" class="absolute left-4 md:left-8 text-white text-3xl hover:text-pink-400" aria-label="Previous photo"><i class="fas fa-chevron-left"></i></button>
+        <figure class="max-w-4xl max-h-full text-center">
+            <img id="lightbox-image" src="" alt="" class="max-h-[80vh] mx-auto rounded-lg shadow-2xl">
+            <figcaption id="lightbox-caption" class="text-white mt-4 heading-font text-xl"></figcaption>
+        </figure>
+        <button id="lightbox-next" type="button" class="absolute right-4 md:right-8 text-white text-3xl hover:text-pink-400" aria-label="Next photo"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Instagram CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="heading-font text-3xl md:text-4xl font-bold mb-6">Join Our Instagram Community</h2>
+                <p class="text-xl mb-10">Follow us for daily fashion inspiration, exclusive previews, styling tips, and special Instagram-only promotions.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="instagram-btn inline-block px-8 py-4 rounded-full text-white font-bold text-lg">
+                        <i class="fab fa-instagram mr-2"></i> Follow @the_wholesaleplug
+                    </a>
+                    <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="bg-white hover:bg-gray-100 text-pink-600 px-8 py-4 rounded-full font-bold text-lg transition">
+                        <i class="fas fa-hashtag mr-2"></i> #OmolaConcepts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="text-2xl font-bold heading-font text-pink-400 mb-2">Omola Concept</div>
+                    <p class="text-gray-400 mb-6">Curated fashion for the modern individual</p>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/the_wholesaleplug" target="_blank" rel="noopener" class="text-2xl text-pink-400 hover:text-pink-300 transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:girlthat612@gmail.com" class="text-2xl text-gray-400 hover:text-white transition" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="shop.html" class="hover:text-white transition">All Products</a></li>
+                        <li><a href="shop.html?category=dresses" class="hover:text-white transition">Dresses</a></li>
+                        <li><a href="shop.html?category=tops" class="hover:text-white transition">Tops &amp; Outerwear</a></li>
+                        <li><a href="shop.html?category=bottoms" class="hover:text-white transition">Bottoms</a></li>
+                        <li><a href="shop.html?category=sets" class="hover:text-white transition">Sets &amp; Playsuits</a></li>
+                        <li><a href="shop.html?category=accessories" class="hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQs</a></li>
+                        <li><a href="shipping-returns.html" class="hover:text-white transition">Shipping &amp; Returns</a></li>
+                        <li><a href="size-guide.html" class="hover:text-white transition">Size Guide</a></li>
+                        <li><a href="cart.html" class="hover:text-white transition">Your Bag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold uppercase tracking-widest text-sm mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="lookbook.html" class="hover:text-white transition">Lookbook</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-2">
+                <p>© <span data-year>2026</span> Omola Concept. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-pink-400"></i> for fashion lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-pink-600 text-white w-12 h-12 rounded-full shadow-lg hidden" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lookbook.js"></script>
+</body>
+</html>
